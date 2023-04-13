@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>ToDoList</title>
+    <link
+      rel="stylesheet"
+      href="index.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="nav_bar">
+      <p class="nav_title">To-Do</p>
+    </div>
+
+    <header class="header">
+      <p class="welcome_message">Good Evening, Logesh</p>
+      <p class="quote">Be so good no one can ignore you</p>
+    </header>
+
+    <div class="add_task">
+      <form action="">
+        <input
+          type="text"
+          placeholder="Enter Task"
+          class="add_task_input"
+        />
+        <button class="submit_btn">Done</button>
+      </form>
+    </div>
+
+    <div class="task_list">
+      <div class="to_do_list">
+        <p class="task_categories">
+          Remaining Tasks <span class="count">(04)</span>
+        </p>
+        <ul>
+          <li>
+            <div class="each_task">
+              <!-- <input type="checkbox" /> -->
+              <button class="checkbox"></button>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquam, corrupti eos! Quod odit rerum sint.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="each_task">
+              <!-- <input type="checkbox" /> -->
+              <button class="checkbox"></button>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquam, corrupti eos! Quod odit rerum sint.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="each_task">
+              <!-- <input type="checkbox" /> -->
+              <button class="checkbox"></button>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquam, corrupti eos! Quod odit rerum sint.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="each_task">
+              <!-- <input type="checkbox" /> -->
+              <button class="checkbox"></button>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquam, corrupti eos! Quod odit rerum sint.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="completed">
+        <p class="task_categories">
+          Completed Task <span class="count">(01)</span>
+        </p>
+        <ul>
+          <li>
+            <div class="each_task">
+              <!-- <input
+                type="checkbox"
+                checked
+                disabled
+              /> -->
+              <button class="checked_box">
+                <i class="fa-solid fa-check"></i>
+              </button>
+              <p>
+                <strike>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aliquam, corrupti eos! Quod odit rerum sint.
+                </strike>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

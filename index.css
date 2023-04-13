@@ -1,0 +1,142 @@
+:root {
+  --blue: #002d6f;
+  --white: #ffffff;
+  --grey: #979797;
+  --border: #b3c3da;
+  --light_grey: #aaaaaa;
+  --light_blue: #466da6;
+  --black: #333333;
+  --green: #0fa958;
+}
+
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav_bar {
+  height: 5rem;
+  background-color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_title {
+  color: var(--white);
+  font-size: 1.7rem;
+}
+
+.header {
+  padding: 3rem 4rem;
+}
+
+.welcome_message {
+  color: var(--blue);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.quote {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--grey);
+  margin-top: 0.4rem;
+  letter-spacing: 0.1rem;
+}
+
+.add_task {
+  padding: 0 4rem;
+}
+
+.add_task_input {
+  width: 21rem;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  border: 0.1rem solid var(--border);
+  border-radius: 0.3rem;
+}
+
+::placeholder {
+  color: var(--light_grey);
+}
+
+.submit_btn {
+  margin-left: 1rem;
+  width: 8rem;
+  padding: 1.3rem;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+.task_list {
+  display: flex;
+  padding: 4rem;
+}
+
+.to_do_list {
+  flex: 1;
+}
+
+.completed {
+  flex: 1;
+}
+
+.task_categories {
+  color: var(--light_blue);
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.count {
+  color: var(--black);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.each_task {
+  display: flex;
+  padding: 1.2rem;
+  border: 0.1rem solid var(--border);
+  width: 28rem;
+  border-radius: 0.2rem;
+  margin-bottom: 0.6rem;
+  align-items: center;
+}
+
+.each_task .checkbox {
+  margin-right: 1rem;
+  height: 1.4rem;
+  width: 1.6rem;
+  cursor: pointer;
+  border: 0.1rem solid var(--border);
+  background-color: var(--white);
+  border-radius: 1rem;
+}
+
+.checked_box {
+  margin-right: 1rem;
+  height: 1.4rem;
+  width: 1.7rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--green);
+}
+
+i {
+  color: var(--white);
+}
