@@ -83,7 +83,7 @@ form {
   padding: 4rem;
 }
 
-.to_do_list {
+.incomplete {
   flex: 1;
 }
 
@@ -107,7 +107,7 @@ ul {
   padding: 0;
 }
 
-.each_task {
+.task {
   display: flex;
   padding: 1.2rem;
   border: 0.1rem solid var(--border);
@@ -126,11 +126,13 @@ input[type="checkbox"] {
   aspect-ratio: 1 / 1;
   content: url("tick.svg");
 }
-input [type="checkbox"]:after {
-  display: none;
-}
+
 input[type="checkbox"]:checked {
   background-color: var(--green);
   border-color: var(--green);
   content: url("tick.svg");
+}
+
+.completed ul .task p {
+  text-decoration: line-through;
 }
