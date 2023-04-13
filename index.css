@@ -117,26 +117,20 @@ ul {
   align-items: center;
 }
 
-.each_task .checkbox {
+input[type="checkbox"] {
   margin-right: 1rem;
-  height: 1.4rem;
-  width: 1.6rem;
-  cursor: pointer;
-  border: 0.1rem solid var(--border);
-  background-color: var(--white);
-  border-radius: 1rem;
+  appearance: none;
+  border: 1px solid var(--border);
+  border-radius: 100%;
+  width: 2.5rem;
+  aspect-ratio: 1 / 1;
+  content: url("tick.svg");
 }
-
-.checked_box {
-  margin-right: 1rem;
-  height: 1.4rem;
-  width: 1.7rem;
-  cursor: pointer;
-  border: none;
-  border-radius: 1rem;
+input [type="checkbox"]:after {
+  display: none;
+}
+input[type="checkbox"]:checked {
   background-color: var(--green);
-}
-
-i {
-  color: var(--white);
+  border-color: var(--green);
+  content: url("tick.svg");
 }
